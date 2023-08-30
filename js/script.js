@@ -58,4 +58,4 @@ createApp({
       },
     };
   },
-}).mount(".thumb");
+}).mount("#game");
