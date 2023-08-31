@@ -33,6 +33,7 @@ const { createApp } = Vue;
 createApp({
   data() {
     return {
+      activeGame: 0,
       game: {
         images: [
           "img/01.webp",
