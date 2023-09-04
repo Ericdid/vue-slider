@@ -59,4 +59,14 @@ createApp({
       },
     };
   },
+  methods: {
+    goNext() {
+      if (this.activeGame < 4) return this.activeGame++;
+      else this.activeGame = 0;
+    },
+    goPrev() {
+      if (this.activeGame <= 0) return (this.activeGame = 4);
+      else this.activeGame--;
+    },
+  },
 }).mount("#game");
