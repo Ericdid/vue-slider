@@ -61,11 +61,13 @@ createApp({
   },
   methods: {
     goNext() {
-      if (this.activeGame < 4) return this.activeGame++;
+      if (this.activeGame < this.game.images.length - 1)
+        return this.activeGame++;
       else this.activeGame = 0;
     },
     goPrev() {
-      if (this.activeGame <= 0) return (this.activeGame = 4);
+      if (this.activeGame <= 0)
+        return (this.activeGame = this.game.images.length - 1);
       else this.activeGame--;
     },
   },
